@@ -3,10 +3,8 @@ import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
-import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 import AnimatedSection from "./components/AnimatedSection";
-import ScrollToTopButton from "./components/ScrollToTopButton";
 
 function App() {
   return (
@@ -35,14 +33,6 @@ function App() {
             <ProjectsSection />
           </AnimatedSection>
         </section>
-
-        {/* Contact Section */}
-        <section id="contact" className=" p-6 bg-gray-100 dark:bg-gray-800">
-          <AnimatedSection>
-            <ContactSection />
-          </AnimatedSection>
-        </section>
-        <ScrollToTopButton />
       </main>
       <Footer />
     </>
