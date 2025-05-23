@@ -25,14 +25,6 @@ const projects = [
     github: "https://github.com/Ayazsa/Bank-marketing-page",
     demo: "https://66f127a7117033b6bfbfa90c--brilliant-choux-5add3c.netlify.app/",
   },
-  {
-    title: "Easy Learning",
-    description:
-      "An interactive learning platform built with React and vanilla CSS, featuring smooth navigation, program highlights, and an enquiry form.",
-    tech: "React, Vanilla CSS",
-    github: "https://github.com/Ayazsa/my-react-app",
-    demo: "https://easelearning.netlify.app/",
-  },
 ];
 
 const ProjectsSection = () => {
