@@ -27,7 +27,7 @@ export const projectList = [
   {
     title: "Electric Vehicle Marketing Page",
     type: "Company Project",
-    tech: "React, CSS, ",
+    tech: "React, CSS",
     description:
       "A single-page marketing site showcasing electric vehicles with their specifications, pricing, and inquiry option.",
     challenges:
@@ -55,6 +55,8 @@ export const projectList = [
       "A responsive marketing page for a bank, highlighting features, operations, and testimonials with interactive UI effects.",
     challenges:
       "Implemented smooth scrolling, image lazy loading, hover transitions, and a testimonial slider with vanilla JavaScript.",
+    github: "https://github.com/Ayazsa/Bank-marketing-page",
+    liveDemo: "https://bankmarketinglandingpage.netlify.app/",
     modal: {
       overview:
         "This is a static marketing website for a fictional bank. It’s designed to showcase banking features and encourage users to open an account. The site uses smooth scrolling navigation and image optimizations to deliver a modern browsing experience.",
@@ -80,6 +82,8 @@ export const projectList = [
       "A functional bank application built with vanilla web technologies, allowing users to simulate basic banking operations with real-time UI updates.",
     challenges:
       "Handled UI state transitions without frameworks, implemented secure-like PIN login, and built loan logic with dynamic validations.",
+    github: "https://github.com/Ayazsa/Bank-app",
+    liveDemo: "https://bankingwebapplication.netlify.app/",
     modal: {
       overview:
         "This is a front-end simulation of a banking system. Users can log in using a User ID and PIN to perform common banking actions. All actions reflect changes instantly in the UI.",
@@ -106,6 +110,8 @@ export const projectList = [
       "An interactive learning platform built with React and vanilla CSS, providing smooth navigation, program highlights, and an enquiry form for prospective students.",
     challenges:
       "Ensured smooth user experience with responsive design and efficient component structure while maintaining clean and scalable code.",
+    github: "https://github.com/Ayazsa/my-react-app",
+    liveDemo: "https://easelearning.netlify.app/",
     modal: {
       overview:
         "Easy Learning is a Single Page Application built using React. It offers users detailed program information with an easy-to-use navigation system, interactive sections such as course highlights, and a contact/enquiry form to connect with the institute.",
@@ -129,6 +135,8 @@ export const projectList = [
       "A modern ChatGPT-inspired interface built using React and Tailwind CSS, featuring a functional sidebar, chat window, and header actions to simulate a real AI chat experience.",
     challenges:
       "Managed dynamic sidebar toggling, conditional rendering for chat states, and maintained a responsive layout across devices using Tailwind's utility-first approach.",
+    github: "https://github.com/Ayazsa/chatgpt-UI-clone",
+    liveDemo: "https://chatgptuiclone.netlify.app/",
     modal: {
       overview:
         "ChatGPT UI Clone is a responsive Single Page Application that replicates the clean interface and behavior of ChatGPT. It includes a sidebar for chat history, a central chat window, and intuitive header controls. Built with React and Tailwind CSS for rapid development and styling.",
@@ -144,6 +152,4 @@ export const projectList = [
       ],
     },
   },
-
-  // Add other projects here
 ];

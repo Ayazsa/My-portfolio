@@ -69,6 +69,31 @@ function ProjectsSection() {
             <p className="text-base text-gray-800 dark:text-gray-300">
               {project.description}
             </p>
+
+            <div className="mt-4 flex gap-3">
+              {project.github && (
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold py-1 px-3 rounded"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  GitHub
+                </a>
+              )}
+              {project.liveDemo && (
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-green-600 hover:bg-green-700 text-white text-sm font-semibold py-1 px-3 rounded"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  Live Demo
+                </a>
+              )}
+            </div>
           </motion.div>
         ))}
       </motion.div>
