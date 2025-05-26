@@ -121,6 +121,29 @@ export const projectList = [
       ],
     },
   },
+  {
+    title: "ChatGPT UI Clone",
+    tech: "React, Tailwind CSS",
+    challenges:
+      "Managing dynamic sidebar toggling, handling message state cleanly, and ensuring responsive behavior for mobile devices.",
+    modal: {
+      overview:
+        "A functional ChatGPT-inspired UI with a sidebar for chat history and a main chat interface. Built for replicating the intuitive and modern feel of AI-based chat apps.",
+      roles: [
+        "User can toggle sidebar using hamburger menu",
+        "Start a new chat or continue existing chats",
+        "Delete or archive chats from the header",
+      ],
+      features: [
+        "Sidebar with chat history",
+        "Hamburger menu for toggling sidebar",
+        "Header options: ChatGPT button, Upgrade button, 3-dot vertical menu (delete/archive)",
+        "Chat window with fallback UI when no chat is active",
+        "Input box for entering messages",
+        "Responsive and clean Tailwind CSS layout",
+      ],
+    },
+  },
 
   // Add other projects here
 ];
