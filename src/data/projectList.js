@@ -123,24 +123,24 @@ export const projectList = [
   },
   {
     title: "ChatGPT UI Clone",
+    type: "Personal Project",
     tech: "React, Tailwind CSS",
+    description:
+      "A modern ChatGPT-inspired interface built using React and Tailwind CSS, featuring a functional sidebar, chat window, and header actions to simulate a real AI chat experience.",
     challenges:
-      "Managing dynamic sidebar toggling, handling message state cleanly, and ensuring responsive behavior for mobile devices.",
+      "Managed dynamic sidebar toggling, conditional rendering for chat states, and maintained a responsive layout across devices using Tailwind's utility-first approach.",
     modal: {
       overview:
-        "A functional ChatGPT-inspired UI with a sidebar for chat history and a main chat interface. Built for replicating the intuitive and modern feel of AI-based chat apps.",
+        "ChatGPT UI Clone is a responsive Single Page Application that replicates the clean interface and behavior of ChatGPT. It includes a sidebar for chat history, a central chat window, and intuitive header controls. Built with React and Tailwind CSS for rapid development and styling.",
       roles: [
-        "User can toggle sidebar using hamburger menu",
-        "Start a new chat or continue existing chats",
-        "Delete or archive chats from the header",
+        "Developer: Designed and built the frontend, structured the layout with Tailwind CSS, and handled UI interactions such as chat initiation, sidebar toggling, and header actions.",
       ],
       features: [
-        "Sidebar with chat history",
-        "Hamburger menu for toggling sidebar",
-        "Header options: ChatGPT button, Upgrade button, 3-dot vertical menu (delete/archive)",
-        "Chat window with fallback UI when no chat is active",
-        "Input box for entering messages",
-        "Responsive and clean Tailwind CSS layout",
+        "Sidebar with chat history and a 'New Chat' button, toggleable via a hamburger icon.",
+        "Header with ChatGPT label, 'Upgrade' button, and a 3-dot menu offering 'Delete' and 'Archive' options.",
+        "Main chat window that displays messages or a 'Start New Chat' prompt when empty.",
+        "Input box for sending messages with proper styling and interaction handling.",
+        "Fully responsive layout adapting cleanly across devices using Tailwind CSS.",
       ],
     },
   },
