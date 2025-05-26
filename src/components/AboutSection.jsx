@@ -97,7 +97,7 @@ const AboutSection = () => {
         <h3 className="text-2xl font-semibold text-indigo-500 mb-4 border-l-4 border-indigo-400 pl-3">
           Goals & Aspirations
         </h3>
-        <p className="max-w-3xl text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+        <p className="bg-gray-100 dark:bg-gray-800 rounded-xl p-8 shadow-md mb-10">
           My vision is to continuously grow as a frontend engineer by mastering
           advanced frameworks, contributing to open-source projects, and
           creating performant, accessible web applications that make a real

@@ -1,9 +1,45 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { projectList } from "../data/projectList";
-import ModalProjectDetails from "./ModalProjectDetails"; // See below
+import ModalProjectDetails from "./ModalProjectDetails";
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+  hover: {
+    scale: 1.05,
+    y: -5,
+    boxShadow: "0px 10px 20px rgba(99, 102, 241, 0.3)", // indigo shadow
+    transition: { duration: 0.3 },
+  },
+};
 
 function ProjectsSection() {
   const [selectedProject, setSelectedProject] = useState(null);
+
+  useEffect(() => {
+    if (selectedProject) {
+      // disable background scroll
+      document.body.style.overflow = "hidden";
+    } else {
+      // enable background scroll
+      document.body.style.overflow = "";
+    }
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [selectedProject]);
 
   return (
     <section
@@ -14,11 +50,18 @@ function ProjectsSection() {
         Projects
       </h2>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 bg-gray-100 dark:bg-gray-800 rounded-xl p-8 shadow-md mb-10">
+      <motion.div
+        className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 bg-gray-100 dark:bg-gray-800 rounded-xl p-8 shadow-md mb-10"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
         {projectList.map((project, index) => (
-          <div
+          <motion.div
             key={index}
-            className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition cursor-pointer"
+            className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md cursor-pointer border border-transparent"
+            variants={cardVariants}
+            whileHover="hover"
             onClick={() => setSelectedProject(project)}
           >
             <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
@@ -26,16 +69,18 @@ function ProjectsSection() {
             <p className="text-base text-gray-800 dark:text-gray-300">
               {project.description}
             </p>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
 
-      {selectedProject && (
-        <ModalProjectDetails
-          project={selectedProject}
-          onClose={() => setSelectedProject(null)}
-        />
-      )}
+      <AnimatePresence>
+        {selectedProject && (
+          <ModalProjectDetails
+            project={selectedProject}
+            onClose={() => setSelectedProject(null)}
+          />
+        )}
+      </AnimatePresence>
     </section>
   );
 }
