@@ -152,4 +152,29 @@ export const projectList = [
       ],
     },
   },
+  {
+    title: "Todo App",
+    type: "Personal Project",
+    tech: "React, CSS",
+    description:
+      "A task management app built with React featuring support for subtasks, replace/edit options, and modal interactions for a smooth user experience.",
+    challenges:
+      "Implemented subtask hierarchy, modal-based edit/replace flow, and dynamic state updates while maintaining a clean and responsive UI.",
+    github: "https://github.com/Ayazsa/todo-app",
+    liveDemo: "https://my-todo-app-a.netlify.app/",
+    modal: {
+      overview:
+        "This Todo App is a React-based project that helps users organize their tasks and subtasks efficiently. It offers features like adding/editing tasks, subtasks, replace functionality through a modal, and task deletion. The UI is minimal and responsive for usability across devices.",
+      roles: [
+        "Developer: Designed and developed the app with full functionality, including state management and component structuring.",
+      ],
+      features: [
+        "Add tasks and manage associated subtasks.",
+        "Replace/edit task and subtask names using a modal popup.",
+        "Auto-focus and auto-clear input fields for smooth UX.",
+        "Delete individual tasks or subtasks.",
+        "Responsive layout designed using vanilla CSS.",
+      ],
+    },
+  },
 ];
